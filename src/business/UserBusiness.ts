@@ -41,7 +41,7 @@ public signup = async ( input: SignupInput): Promise<SignupOutout> => {
         name,
         email,
         hashedPassword,
-        USER_ROLES.NORMAL, // só é possível criar users com contas normais
+        USER_ROLES.NORMAL,
         new Date().toISOString()
     )
 
@@ -80,10 +80,6 @@ public login = async (input: LoginInput): Promise<LoginOutput> => {
     if (!userDB) {
         throw new NotFoundError("'email' não encontrado")
     }
-
-    // if (password !== userDB.password) {
-    //     throw new BadRequestError("'email' ou 'password' incorretos")
-    // }
 
     const isPasswordCorrect = await this.hashManager.compare(password, userDB.password)
  

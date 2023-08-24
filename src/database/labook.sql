@@ -1,3 +1,4 @@
+-- Active: 1692911872329@@127.0.0.1@3306
 
 
 CREATE TABLE users(
@@ -11,10 +12,10 @@ CREATE TABLE users(
 
 INSERT INTO users (id, name, email, password, role)
 VALUES
-        ("u001", "Aline", "aline@labenu.com", "$2a$12$4ZiRkJOctWIhLX0LGN3zae0gKRkiFwzv12Xbg0R/cBRgxrqcQAEC6", "author"),
-        ("u002", "Binho", "binho@gmail.com", "$2a$12$VCkT4hT9ZvqeCMTxBvOXlOa0oFNs0NAv3LK4JrBtlxHCxV5NtPVYS", "author"),
-        ("u003", "Evandro", "evandro@gmail.com", "$2a$12$C5Mb56OZm5IgonJr1NZ3aedafRUSizeg2X18.zRjT.AVMaXa/AEW6", "author"),
-        ("u004", "Paula", "paula@labenu.com", "$2a$12$PwqMa9CQfyXrM3PlZYZJUunbw0f2066.ey.SZEscQ95f3vMkbsqve", "admin");
+        ("u001", "Beto", "beto@gmail.com", "$2a$12$4ZiRkJOctWIhLX0LGN3zae0gKRkiFwzv12Xbg0R/cBRgxrqcQAEC6", "author"),
+        ("u002", "Clebia", "clebia@gmail.com", "$2a$12$VCkT4hT9ZvqeCMTxBvOXlOa0oFNs0NAv3LK4JrBtlxHCxV5NtPVYS", "author"),
+        ("u003", "Nathalia", "nathalia@gmail.com", "$2a$12$C5Mb56OZm5IgonJr1NZ3aedafRUSizeg2X18.zRjT.AVMaXa/AEW6", "author"),
+        ("u004", "Nicole", "nicole@gmai.com", "$2a$12$PwqMa9CQfyXrM3PlZYZJUunbw0f2066.ey.SZEscQ95f3vMkbsqve", "admin");
 
 SELECT * FROM users;
 
@@ -32,10 +33,10 @@ CREATE TABLE posts(
 );
 
 INSERT INTO posts(id, creator_id, content)
-VALUES  ("p001", "u002", "Bom dia mundo!"),
-        ("p002", "u003", "E aí pessoal?"),
-        ("p003", "u004", "Sextoou!!!"),
-        ("p004", "u001", "Bora trabalhar?");
+VALUES  ("p001", "u002", "Olá mundo!"),
+        ("p002", "u003", "Acorda meu povo"),
+        ("p003", "u004", "Bora pra praia?"),
+        ("p004", "u001", "Bora tomar uma?");
 
 CREATE TABLE likes_dislikes(
     user_id TEXT NOT NULL,

@@ -65,7 +65,7 @@ export class PostBusiness {
         name: creator.name,
       };
     }
-    // modela o DTO para a resposta
+   
     return posts;
   };
 

@@ -7,7 +7,6 @@ export interface CreatePostOutput {
     message: string    
 }
 
-
 export interface GetPostsInput {
     q: unknown
     token: string | undefined

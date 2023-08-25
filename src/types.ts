@@ -4,8 +4,9 @@ export enum USER_ROLES {
 }
 
 export enum POST_LIKE {
-    ALREADY_LIKED = "ALREADY LIKED",
-    ALREADY_DISLYKE = "ALREADY DISLIKED"
+  ALREADY_LIKED = "ALREADY LIKED",
+  ALREADY_DISLYKED = "ALREADY DISLIKED",
+  ALREADY_DISLIKED = "ALREADY_DISLIKED"
 }
 
 export interface UserDB {
@@ -33,7 +34,7 @@ export interface PostDB {
     likes: number,
     dislikes: number,
     created_at: string,
-    update_at: string
+    updated_at: string
 }
 
 export interface PostModel {
@@ -43,7 +44,7 @@ export interface PostModel {
     likes: number,
     dislikes: number,
     createdAt: string,
-    updateAt: string,
+    updatedAt: string,
     creator: {
         id: string,
         name: string
@@ -60,7 +61,7 @@ export interface PostWithCreatorDB extends PostDB {
     creator_name: string
 }
 
-export interface LikeDslikeDB {
+export interface LikeDislikeDB {
     user_id: string,
     post_id: string,
     like: number

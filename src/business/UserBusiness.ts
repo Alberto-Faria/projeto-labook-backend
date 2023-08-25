@@ -1,5 +1,5 @@
 import { IdGenerator } from "../services/IdGenerator"
-import { LoginInput, LoginOutput, SignupInput, SignupOutput } from "../dtos/UserDTO"
+import { LoginInput, LoginOutput, SignupInput, SignupOutput } from "../dtos/userDTO"
 import { BadRequestError } from "../errors/BadRequestError"
 import { NotFoundError } from "../errors/NotFoundError"
 import { TokenPayload, USER_ROLES } from "../types"
@@ -17,7 +17,7 @@ export class UserBusiness {
 
     ){}
 
-public signup = async ( input: SignupInput): Promise<SignupOutout> => {
+public signup = async ( input: SignupInput): Promise<SignupOutput> => {
     const { name, email, password } = input
 
     if (typeof name !== "string") {
@@ -111,7 +111,4 @@ public login = async (input: LoginInput): Promise<LoginOutput> => {
 
     return output
 }
-}
-
-
 }

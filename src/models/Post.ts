@@ -107,6 +107,7 @@ public setCreator(value: {
   public toBusinessModel(): PostModel {
     return {
       id: this.id,
+      creator_id: this.creator.id,
       content: this.content,
       likes: this.likes,
       dislikes: this.dislikes,

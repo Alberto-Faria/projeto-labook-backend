@@ -1,5 +1,4 @@
 import { Request, Response } from "express"
-import { afterEach } from "node:test"
 import { PostBusiness } from "../business/PostBusiness"
 import { CreatePostInput, DeletePostInput, EditPostInputDTO, GetPostsInput, LikeOrDislikePostInput } from "../dtos/postDTO"
 

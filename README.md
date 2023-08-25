@@ -56,7 +56,7 @@ O Labook é uma rede social com o objetivo de promover a conexão e interação 
 
 * Documentação
 
-    https://documenter.getpostman.com/view/18780309/2s93CGTGfZ
+    https://documenter.getpostman.com/view/26585579/2s9Y5YR2KG
 
 
 * Para rodar o Projeto
